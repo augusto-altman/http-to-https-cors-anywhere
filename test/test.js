@@ -91,7 +91,7 @@ describe('Basic functionality', function() {
     request(cors_anywhere)
       .get('/example.com')
       .expect('Access-Control-Allow-Origin', '*')
-      .expect('x-request-url', 'http://example.com/')
+      .expect('x-request-url', 'https://example.com/')
       .expect(200, 'Response from example.com', done);
   });
 
@@ -99,16 +99,8 @@ describe('Basic functionality', function() {
     request(cors_anywhere)
       .get('/example.com:80')
       .expect('Access-Control-Allow-Origin', '*')
-      .expect('x-request-url', 'http://example.com:80/')
+      .expect('x-request-url', 'https://example.com:80/')
       .expect(200, 'Response from example.com', done);
-  });
-
-  it('GET /example.com:443', function(done) {
-    request(cors_anywhere)
-      .get('/example.com:443')
-      .expect('Access-Control-Allow-Origin', '*')
-      .expect('x-request-url', 'https://example.com:443/')
-      .expect(200, 'Response from https://example.com', done);
   });
 
   it('GET //example.com', function(done) {
@@ -124,7 +116,7 @@ describe('Basic functionality', function() {
     request(cors_anywhere)
       .get('///example.com')
       .expect('Access-Control-Allow-Origin', '*')
-      .expect('x-request-url', 'http://example.com/')
+      .expect('x-request-url', 'https://example.com/')
       .expect(200, 'Response from example.com', done);
   });
 

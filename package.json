@@ -1,23 +1,22 @@
 {
-  "name": "cors-anywhere",
-  "version": "0.4.0",
-  "description": "CORS Anywhere is a reverse proxy which adds CORS headers to the proxied request. Request URL is taken from the path",
+  "name": "http-to-https-cors-anywhere",
+  "version": "0.0.1",
+  "description": "HTTP to HTTPS CORS Anywhere is a reverse proxy which adds CORS headers to the proxied request. Request URL is taken from the path. The proxy can be exposed over HTTP and will always hit HTTPS servers",
   "license": "MIT",
-  "author": "Rob Wu <rob@robwu.nl>",
+  "author": "Augusto Altman Quaranta <augusto.altman@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rob--W/cors-anywhere.git"
+    "url": "https://github.com/augusto-altman/http-to-https-cors-anywhere"
   },
   "bugs": {
-    "url": "https://github.com/Rob--W/cors-anywhere/issues/",
-    "email": "rob@robwu.nl"
+    "url": "https://github.com/augusto-altman/http-to-https-cors-anywhere/issues",
+    "email": "augusto.altman@gmail.com"
   },
   "keywords": [
     "cors",
     "cross-domain",
     "http-proxy",
-    "proxy",
-    "heroku"
+    "proxy"
   ],
   "main": "./lib/cors-anywhere.js",
   "dependencies": {

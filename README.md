@@ -1,5 +1,8 @@
-[![Build Status](https://travis-ci.org/Rob--W/cors-anywhere.svg?branch=master)](https://travis-ci.org/Rob--W/cors-anywhere)
-[![Coverage Status](https://coveralls.io/repos/github/Rob--W/cors-anywhere/badge.svg?branch=master)](https://coveralls.io/github/Rob--W/cors-anywhere?branch=master)
+**About this Fork: HTTP to HTTPS CORS ANYWHERE**
+
+This fork is just a trivial modification of the original [CORS Anywhere repo](https://github.com/Rob--W/cors-anywhere) that just enforce CORS bypassing over HTTPS servers through an HTTP proxy. So the clients will hit an HTTP url (the proxy) which will be proxied to an HTTPS server.
+
+The fork is based on [this issue](https://github.com/nodejitsu/node-http-proxy/issues/304).
 
 **CORS Anywhere** is a NodeJS proxy which adds CORS headers to the proxied request.
 
